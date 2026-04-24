@@ -146,16 +146,18 @@ const Hero = () => (
 
       <div className="lg:col-span-5 relative animate-fade-in-slow">
         <div className="relative aspect-[4/5] max-w-md mx-auto">
-          <div className="absolute -inset-4 bg-gradient-gold opacity-20 blur-3xl rounded-[2rem]" />
-          <div className="absolute -top-4 -left-4 w-24 h-24 border-l border-t border-primary/60" />
-          <div className="absolute -bottom-4 -right-4 w-24 h-24 border-r border-b border-primary/60" />
+          <div className="absolute -inset-6 bg-gradient-gold opacity-25 blur-3xl rounded-[2.5rem]" />
+          <div className="absolute inset-0 rounded-[2rem] ring-1 ring-primary/30" />
           <img
             src={portrait}
             alt="Hilal M, CEO and Founder of Hameediya Holding Group"
             width={1024}
             height={1280}
-            className="relative w-full h-full object-cover rounded-[2rem] shadow-elevated grayscale-[15%]"
+            className="relative w-full h-full object-cover rounded-[2rem] shadow-elevated"
           />
+          <div className="absolute -bottom-5 -right-5 bg-gradient-gold text-primary-foreground px-5 py-3 rounded-full text-xs uppercase tracking-[0.25em] font-medium shadow-gold">
+            Est. Hameediya
+          </div>
         </div>
       </div>
     </div>
