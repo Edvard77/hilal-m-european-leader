@@ -60,7 +60,7 @@ const Nav = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-5">
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="h-8 w-8 rounded-sm bg-gradient-gold grid place-items-center text-primary-foreground font-display font-bold">
+          <span className="h-9 w-9 rounded-xl bg-gradient-gold grid place-items-center text-primary-foreground font-display font-bold">
             H
           </span>
           <span className="font-display text-lg tracking-wide">
@@ -80,7 +80,7 @@ const Nav = () => {
         </nav>
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 text-sm border border-primary/40 text-primary px-5 py-2 rounded-sm hover:bg-primary hover:text-primary-foreground transition-smooth"
+          className="hidden md:inline-flex items-center gap-2 text-sm border border-primary/40 text-primary px-6 py-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-smooth"
         >
           Get in touch <ArrowRight className="h-4 w-4" />
         </a>
@@ -115,14 +115,14 @@ const Hero = () => (
         <div className="flex flex-wrap gap-4 pt-4">
           <a
             href="#contact"
-            className="group inline-flex items-center gap-3 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-sm font-medium shadow-gold hover:scale-[1.02] transition-smooth"
+            className="group inline-flex items-center gap-3 bg-gradient-gold text-primary-foreground px-9 py-4 rounded-full font-medium shadow-gold hover:scale-[1.02] transition-smooth"
           >
             Contact
             <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
           <a
             href="#businesses"
-            className="inline-flex items-center gap-3 border border-border hover:border-primary/60 px-8 py-4 rounded-sm transition-smooth"
+            className="inline-flex items-center gap-3 border border-border hover:border-primary/60 px-9 py-4 rounded-full transition-smooth"
           >
             View Businesses
           </a>
@@ -146,7 +146,7 @@ const Hero = () => (
 
       <div className="lg:col-span-5 relative animate-fade-in-slow">
         <div className="relative aspect-[4/5] max-w-md mx-auto">
-          <div className="absolute -inset-4 bg-gradient-gold opacity-20 blur-2xl rounded-sm" />
+          <div className="absolute -inset-4 bg-gradient-gold opacity-20 blur-3xl rounded-[2rem]" />
           <div className="absolute -top-4 -left-4 w-24 h-24 border-l border-t border-primary/60" />
           <div className="absolute -bottom-4 -right-4 w-24 h-24 border-r border-b border-primary/60" />
           <img
@@ -154,7 +154,7 @@ const Hero = () => (
             alt="Hilal M, CEO and Founder of Hameediya Holding Group"
             width={1024}
             height={1280}
-            className="relative w-full h-full object-cover rounded-sm shadow-elevated grayscale-[15%]"
+            className="relative w-full h-full object-cover rounded-[2rem] shadow-elevated grayscale-[15%]"
           />
         </div>
       </div>
@@ -245,12 +245,12 @@ const Businesses = () => {
               key={it.title}
               data-reveal
               style={{ animationDelay: `${i * 120}ms` }}
-              className="group relative bg-card border border-border p-10 rounded-sm overflow-hidden hover:border-primary/50 transition-smooth shadow-card-premium"
+              className="group relative bg-card border border-border p-10 rounded-3xl overflow-hidden hover:border-primary/50 transition-smooth shadow-card-premium"
             >
               <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
               <div className="absolute -right-12 -bottom-12 w-40 h-40 rounded-full bg-primary/5 blur-3xl opacity-0 group-hover:opacity-100 transition-smooth" />
 
-              <div className="h-14 w-14 rounded-sm border border-primary/30 grid place-items-center mb-8 group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
+              <div className="h-14 w-14 rounded-2xl border border-primary/30 grid place-items-center mb-8 group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
                 <it.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
               </div>
               <div className="text-xs uppercase tracking-[0.25em] text-primary/80 mb-3">
@@ -347,7 +347,7 @@ const Contact = () => {
                 rel="noreferrer"
                 className="bg-background p-8 flex items-start gap-5 hover:bg-card transition-smooth group"
               >
-                <div className="h-12 w-12 rounded-sm border border-primary/30 grid place-items-center shrink-0 group-hover:bg-primary group-hover:border-primary transition-smooth">
+                <div className="h-12 w-12 rounded-2xl border border-primary/30 grid place-items-center shrink-0 group-hover:bg-primary group-hover:border-primary transition-smooth">
                   <it.icon className="h-5 w-5 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
@@ -366,13 +366,13 @@ const Contact = () => {
             href={`https://wa.me/${wa}`}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-sm font-medium shadow-gold hover:scale-[1.02] transition-smooth"
+            className="inline-flex items-center gap-3 bg-gradient-gold text-primary-foreground px-9 py-4 rounded-full font-medium shadow-gold hover:scale-[1.02] transition-smooth"
           >
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>
           <a
             href="mailto:hilal@hameediya.com"
-            className="inline-flex items-center gap-3 border border-border hover:border-primary/60 px-8 py-4 rounded-sm transition-smooth"
+            className="inline-flex items-center gap-3 border border-border hover:border-primary/60 px-9 py-4 rounded-full transition-smooth"
           >
             <Mail className="h-4 w-4" /> Email Direct
           </a>
@@ -386,7 +386,7 @@ const Footer = () => (
   <footer className="border-t border-border py-12">
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex items-center gap-3">
-        <span className="h-7 w-7 rounded-sm bg-gradient-gold grid place-items-center text-primary-foreground font-display font-bold text-sm">
+        <span className="h-8 w-8 rounded-xl bg-gradient-gold grid place-items-center text-primary-foreground font-display font-bold text-sm">
           H
         </span>
         <span className="font-display tracking-wide">
