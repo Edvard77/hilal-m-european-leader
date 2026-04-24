@@ -4,61 +4,62 @@
 
 @layer base {
   :root {
-    /* Premium dark luxury palette */
-    --background: 220 30% 4%;
-    --foreground: 40 30% 96%;
+    /* Premium dark luxury palette — deeper blacks, richer gold */
+    --background: 220 35% 3%;
+    --foreground: 40 25% 95%;
 
-    --card: 220 28% 7%;
-    --card-foreground: 40 30% 96%;
+    --card: 222 30% 6%;
+    --card-foreground: 40 25% 95%;
 
-    --popover: 220 28% 7%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 222 30% 6%;
+    --popover-foreground: 40 25% 95%;
 
-    /* Gold primary */
-    --primary: 42 60% 60%;
-    --primary-foreground: 220 40% 6%;
-    --primary-glow: 44 80% 70%;
+    /* Refined champagne gold */
+    --primary: 40 65% 58%;
+    --primary-foreground: 220 40% 5%;
+    --primary-glow: 44 80% 75%;
 
-    --secondary: 220 25% 12%;
-    --secondary-foreground: 40 30% 96%;
+    --secondary: 220 28% 9%;
+    --secondary-foreground: 40 25% 95%;
 
-    --muted: 220 20% 14%;
-    --muted-foreground: 40 10% 65%;
+    --muted: 220 22% 11%;
+    --muted-foreground: 40 8% 62%;
 
-    --accent: 42 60% 60%;
-    --accent-foreground: 220 40% 6%;
+    --accent: 40 65% 58%;
+    --accent-foreground: 220 40% 5%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 40 30% 96%;
+    --destructive-foreground: 40 25% 95%;
 
-    --border: 220 20% 16%;
-    --input: 220 20% 14%;
-    --ring: 42 60% 60%;
+    --border: 220 18% 14%;
+    --input: 220 22% 11%;
+    --ring: 40 65% 58%;
 
-    --radius: 0.25rem;
+    --radius: 9999px;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(42 70% 55%), hsl(44 85% 72%));
-    --gradient-radial: radial-gradient(ellipse at top, hsl(220 50% 12%) 0%, hsl(220 30% 4%) 60%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 35% 6%) 0%, hsl(225 40% 9%) 50%, hsl(220 30% 4%) 100%);
-    --gradient-fade-b: linear-gradient(to bottom, transparent, hsl(220 30% 4%));
+    --gradient-gold: linear-gradient(135deg, hsl(38 70% 52%) 0%, hsl(44 85% 72%) 50%, hsl(38 70% 52%) 100%);
+    --gradient-gold-soft: linear-gradient(135deg, hsl(40 60% 55%), hsl(44 75% 68%));
+    --gradient-radial: radial-gradient(ellipse at top, hsl(220 50% 10%) 0%, hsl(220 35% 3%) 65%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 40% 5%) 0%, hsl(225 45% 8%) 50%, hsl(220 35% 3%) 100%);
+    --gradient-fade-b: linear-gradient(to bottom, transparent, hsl(220 35% 3%));
 
     /* Shadows */
-    --shadow-gold: 0 20px 60px -20px hsl(42 70% 55% / 0.35);
-    --shadow-elevated: 0 30px 80px -30px hsl(0 0% 0% / 0.8);
-    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-gold: 0 25px 70px -20px hsl(40 70% 55% / 0.45), 0 0 0 1px hsl(40 65% 58% / 0.15);
+    --shadow-elevated: 0 40px 100px -30px hsl(0 0% 0% / 0.9);
+    --shadow-card: 0 15px 50px -15px hsl(0 0% 0% / 0.6);
 
     /* Transitions */
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
-    --sidebar-background: 220 28% 7%;
-    --sidebar-foreground: 40 30% 96%;
-    --sidebar-primary: 42 60% 60%;
-    --sidebar-primary-foreground: 220 40% 6%;
-    --sidebar-accent: 220 20% 14%;
-    --sidebar-accent-foreground: 40 30% 96%;
-    --sidebar-border: 220 20% 16%;
-    --sidebar-ring: 42 60% 60%;
+    --sidebar-background: 222 30% 6%;
+    --sidebar-foreground: 40 25% 95%;
+    --sidebar-primary: 40 65% 58%;
+    --sidebar-primary-foreground: 220 40% 5%;
+    --sidebar-accent: 220 22% 11%;
+    --sidebar-accent-foreground: 40 25% 95%;
+    --sidebar-border: 220 18% 14%;
+    --sidebar-ring: 40 65% 58%;
   }
 }
 
